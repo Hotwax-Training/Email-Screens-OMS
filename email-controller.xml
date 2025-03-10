@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<site-conf xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xmlns="http://ofbiz.apache.org/Site-Conf"
+           xsi:schemaLocation="http://ofbiz.apache.org/Site-Conf http://ofbiz.apache.org/dtds/site-conf.xsd">
+    <request-map uri="appUserResetPasswordNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="appUserResetPasswordNotification"/>
+    </request-map>
+    <request-map uri="appUserCreatedNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="appUserCreatedNotification"/>
+    </request-map>
+    <request-map uri="appUserCreatedPlainTextNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="appUserCreatedPlainTextNotification"/>
+    </request-map>
+
+    <request-map uri="appUserResetPasswordPlainTextNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="appUserResetPasswordPlainTextNotification"/>
+    </request-map>
+
+    <request-map uri="contactUsNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="contactUsNotification"/>
+    </request-map>
+
+    <request-map uri="contactUsPlainNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="contactUsPlainNotification"/>
+    </request-map>
+
+    <request-map uri="customerEmailTemplate">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="customerEmailTemplate"/>
+    </request-map>
+
+    <request-map uri="customerEmailPlainTextTemplate">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="customerEmailPlainTextTemplate"/>
+    </request-map>
+
+    <request-map uri="digitalItemFulfillmentNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="digitalItemFulfillmentNotification"/>
+    </request-map>
+
+    <request-map uri="digitalItemFulfillmentPlainTextNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="digitalItemFulfillmentPlainTextNotification"/>
+    </request-map>
+
+    <request-map uri="emailVerifyLinkNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="emailVerifyLinkNotification"/>
+    </request-map>
+
+    <request-map uri="emailVerifyLinkPlainTextNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="emailVerifyLinkPlainTextNotification"/>
+    </request-map>
+
+    <request-map uri="newsLetterSubscriptionNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="newsLetterSubscriptionNotification"/>
+    </request-map>
+
+    <request-map uri="proApplicationApprovalNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="proApplicationApprovalNotification"/>
+    </request-map>
+
+    <request-map uri="referLinkNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="referLinkNotification"/>
+    </request-map>
+
+    <request-map uri="referLinkPlainTextNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="referLinkPlainTextNotification"/>
+    </request-map>
+
+    <request-map uri="registrationConfirmNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="registrationConfirmNotification"/>
+    </request-map>
+
+    <request-map uri="registrationConfirmPlainTextNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="registrationConfirmPlainTextNotification"/>
+    </request-map>
+
+    <request-map uri="resetPasswordNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="resetPasswordNotification"/>
+    </request-map>
+
+    <request-map uri="resetPasswordPlainTextNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="resetPasswordPlainTextNotification"/>
+    </request-map>
+
+    <request-map uri="sendFileNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="sendFileNotification"/>
+    </request-map>
+
+    <request-map uri="updateEmailConfirmationNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="updateEmailConfirmationNotification"/>
+    </request-map>
+
+    <request-map uri="updateEmailNotificationOnOldEmail">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="updateEmailNotificationOnOldEmail"/>
+    </request-map>
+
+    <request-map uri="verifyEmailConfirmationNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="verifyEmailConfirmationNotification"/>
+    </request-map>
+
+    <request-map uri="verifyLinkNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="verifyLinkNotification"/>
+    </request-map>
+
+    <request-map uri="verifyLinkPlainTextNotification">
+        <security https="true" auth="true"/>
+        <response name="success" type="view" value="verifyLinkPlainTextNotification"/>
+    </request-map>
+
+
+
+    <view-map name="appUserCreatedNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#AppUserCreatedNotification"/>
+
+    <view-map name="appUserCreatedPlainTextNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#AppUserCreatedPlainTextNotification"/>
+
+    <view-map name="appUserResetPasswordNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#AppUserResetPasswordNotification"/>
+
+    <view-map name="appUserResetPasswordPlainTextNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#AppUserResetPasswordPlainTextNotification"/>
+
+    <view-map name="contactUsNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#ContactUsNotification"/>
+
+    <view-map name="contactUsPlainTextNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#ContactUsPlainTextNotification"/>
+
+    <view-map name="customerEmailTemplate" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#CustomerEmailTemplate"/>
+
+    <view-map name="customerEmailPlainTextTemplate" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#CustomerEmailPlainTextTemplate"/>
+
+    <view-map name="digitalItemFulfillmentNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#DigitalItemFulfillmentNotification"/>
+
+    <view-map name="digitalItemFulfillmentPlainTextNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#DigitalItemFulfillmentPlainTextNotification"/>
+
+    <view-map name="emailVerifyLinkNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#EmailVerifyLinkNotification"/>
+
+    <view-map name="emailVerifyLinkPlainTextNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#EmailVerifyLinkPlainTextNotification"/>
+
+    <view-map name="newsLetterSubscriptionNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#NewsLetterSubscriptionNotification"/>
+
+    <view-map name="proApplicationApprovalNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#ProApplicationApprovalNotification"/>
+
+    <view-map name="referLinkNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#ReferLinkNotification"/>
+
+    <view-map name="referLinkPlainTextNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#ReferLinkPlainTextNotification"/>
+
+    <view-map name="registrationConfirmNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#RegistrationConfirmNotification"/>
+
+    <view-map name="registrationConfirmPlainTextNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#RegistrationConfirmPlainTextNotification"/>
+
+    <view-map name="resetPasswordNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#ResetPasswordNotification"/>
+
+    <view-map name="resetPasswordPlainTextNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#ResetPasswordPlainTextNotification"/>
+
+    <view-map name="sendFileNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#SendFileNotification"/>
+
+    <view-map name="updateEmailConfirmationNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#UpdateEmailConfirmationNotification"/>
+
+    <view-map name="updateEmailNotificationOnOldEmail" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#UpdateEmailNotificationOnOldEmail"/>
+
+    <view-map name="verifyEmailConfirmationNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#VerifyEmailConfirmationNotification"/>
+
+    <view-map name="verifyLinkNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#VerifyLinkNotification"/>
+
+    <view-map name="verifyLinkPlainTextNotification" type="screen"
+              page="component://hwmapps/widget/email/EmailScreens.xml#VerifyLinkPlainTextNotification"/>
+</site-conf>
