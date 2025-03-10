@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <screens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://ofbiz.apache.org/Widget-Screen" xsi:schemaLocation="http://ofbiz.apache.org/Widget-Screen http://ofbiz.apache.org/dtds/widget-screen.xsd">
+
+    <screen name="AppUserResetPasswordNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="AppUserResetPasswordNotification"/>
+
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/AppUserResetPasswordNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="AppUserCreatedNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="AppUserCreatedNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/AppUserCreatedNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="AppUserCreatedPlainTextNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="AppUserCreatedPlainTextNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/AppUserCreatedPlainTextNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="AppUserResetPasswordPlainTextNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="AppUserResetPasswordPlainTextNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/AppUserResetPasswordPlainTextNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="ContactUsNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="ContactUsNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/ContactUsNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="ContactUsPlainTextNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="ContactUsPlainTextNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/ContactUsPlainTextNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="CustomerEmailTemplate">
+        <section>
+            <actions>
+                <set field="titleProperty" value="CustomerEmailTemplate"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/CustomerEmailTemplate.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="CustomerEmailPlainTextTemplate">
+        <section>
+            <actions>
+                <set field="titleProperty" value="CustomerEmailPlainTextTemplate"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/CustomerEmailPlainTextTemplate.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="DigitalItemFulfillmentNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="DigitalItemFulfillmentNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/DigitalItemFulfillmentNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="DigitalItemFulfillmentPlainTextNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="DigitalItemFulfillmentPlainTextNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/DigitalItemFulfillmentPlainTextNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="EmailVerifyLinkNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="EmailVerifyLinkNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/EmailVerifyLinkNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="EmailVerifyLinkPlainTextNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="EmailVerifyLinkPlainTextNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/EmailVerifyLinkPlainTextNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="NewsLetterSubscriptionNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="NewsLetterSubscriptionNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/NewsLetterSubscriptionNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="ProApplicationApprovalNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="ProApplicationApprovalNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/ProApplicationApprovalNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="ReferLinkNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="ReferLinkNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/ReferLinkNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="ReferLinkPlainTextNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="ReferLinkPlainTextNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/ReferLinkPlainTextNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="RegistrationConfirmNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="RegistrationConfirmNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/RegistrationConfirmNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="RegistrationConfirmPlainTextNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="RegistrationConfirmPlainTextNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/RegistrationConfirmPlainTextNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="ResetPasswordNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="ResetPasswordNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/ResetPasswordNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="ResetPasswordPlainTextNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="ResetPasswordPlainTextNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/ResetPasswordPlainTextNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="SendFileNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="SendFileNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/SendFileNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="UpdateEmailConfirmationNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="UpdateEmailConfirmationNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/UpdateEmailConfirmationNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="UpdateEmailNotificationOnOldEmail">
+        <section>
+            <actions>
+                <set field="titleProperty" value="UpdateEmailNotificationOnOldEmail"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/UpdateEmailNotificationOnOldEmail.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="VerifyEmailConfirmationNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="VerifyEmailConfirmationNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/VerifyEmailConfirmationNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="VerifyLinkNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="VerifyLinkNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/VerifyLinkNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+    <screen name="VerifyLinkPlainTextNotification">
+        <section>
+            <actions>
+                <set field="titleProperty" value="VerifyLinkPlainTextNotification"/>
+            </actions>
+            <widgets>
+                <decorator-screen name="main-decorator" location="${parameters.mainDecoratorLocation}">
+                    <decorator-section name="body">
+                        <platform-specific><html><html-template location="component://hwmapps/template/email/party/VerifyLinkPlainTextNotification.ftl"/></html></platform-specific>
+                    </decorator-section>
+                </decorator-screen>
+            </widgets>
+        </section>
+    </screen>
+
+</screens>
